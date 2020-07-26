@@ -27,9 +27,6 @@ const AddQRCode = ({ addQRCode, getQRCodes }) => {
   );
 };
 
-const mapDispatchToProps = {
-  addBook,
-  getBooks,
-};
+const mapDispatchToProps = { addQRCode, getQRCodes };
 
-export default connect(null, mapDispatchToProps)(AddBook);
+export default connect(null, mapDispatchToProps)(AddQRCode);
