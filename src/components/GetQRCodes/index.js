@@ -18,9 +18,10 @@ const GetQRCodes = ({ codes }) => {
         ? codes.map((code) => {
             return (
               <div key={code.link} style={{ border: "solid black 1.5px" }}>
-                <h4>
-                  {code.link} {createImg(code.qr_code)}
-                </h4>
+                <div id="qr-container">
+                  <div id="link"> {code.link} </div>
+                  <div id="img"> {createImg(code.qr_code)} </div>
+                </div>
               </div>
             );
           })

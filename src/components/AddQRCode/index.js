@@ -15,7 +15,7 @@ const AddQRCode = ({ addQRCode, getQRCodes }) => {
     let generatedQRCode = qr.createImgTag();
     document.getElementById("placeHolder").innerHTML = generatedQRCode;
     let generatedCodeSrc = generatedQRCode.split(" ")[1].split('"')[1];
-    console.log(generatedCodeSrc);
+
     setCode({ ...code, qr_code: generatedCodeSrc });
   };
 
